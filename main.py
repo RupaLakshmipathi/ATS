@@ -9,7 +9,7 @@ app = Flask(__name__, static_folder='frontend', static_url_path='')
 CORS(app)
 
 # 🔑 Set API key safely (env variable)
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY", "AIzaSyBzzrqsAFRr8yssq571eO0U1vzIaDCP7cg"))
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY", "your_api_key"))
 
 model = genai.GenerativeModel("gemini-2.5-flash")
 
